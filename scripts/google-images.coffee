@@ -4,6 +4,7 @@
 # Commands:
 #   hubot image me <query> - The Original. Queries Google Images for <query> and returns a random top result.
 #   hubot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
+#   hubot spark me - Get some sweet pics of blunts.
 #   hubot mustache me <url> - Adds a mustache to the specified URL.
 #   hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
 
@@ -14,6 +15,10 @@ module.exports = (robot) ->
 
   robot.respond /animate( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[2], true, (url) ->
+      msg.send url
+
+  robot.respond /spark( me)?/i, (msg) ->
+    imageMe msg, "blunts", true, (url) ->
       msg.send url
 
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
