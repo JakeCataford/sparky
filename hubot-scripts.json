@@ -1,1 +1,23 @@
-["redis-brain.coffee", "shipit.coffee"]
+[
+  "redis-brain.coffee", 
+  "shipit.coffee",
+  "abstract.coffee",
+  "achievement_unlocked.coffee",
+  "ackbar.coffee",
+  "advice.coffee",
+  "alot.coffee",
+  "announce.coffee",
+  "applause.coffee",
+  "aww.coffee",
+  "bang-bang.coffee",
+  "base64.coffee",
+  "beerme.coffee",
+  "bees.coffee",
+  "bookmark.coffee",
+  "botsnack.coffee",
+  "calm-down.coffee",
+  "capgun.coffee",
+  "coin.coffee",
+  "dealwithit.coffee",
+  "dice.coffee"
+]
