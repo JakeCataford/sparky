@@ -1,5 +1,5 @@
 [
-  "redis-brain.coffee", 
+  "redis-brain.coffee",
   "shipit.coffee",
   "abstract.coffee",
   "achievement_unlocked.coffee",
