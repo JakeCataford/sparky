@@ -21,6 +21,10 @@ module.exports = (robot) ->
     imageMe msg, "blunts", true, (url) ->
       msg.send url
 
+  robot.respond /ambawk(.*)/i, (msg) ->
+    imageMe msg, "ambient occlusion", true, (url) ->
+      msg.send url
+
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
     type = Math.floor(Math.random() * 6)
     mustachify = "http://mustachify.me/#{type}?src="
